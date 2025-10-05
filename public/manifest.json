@@ -1,0 +1,27 @@
+{
+  "name": "Comunidade Cristã Oikos",
+  "short_name": "Oikos",
+  "description": "Igreja Evangélica em São Carlos - Uma casa para todos crescerem no relacionamento com Jesus",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1a1a1a",
+  "orientation": "portrait-primary",
+  "lang": "pt-BR",
+  "scope": "/",
+  "categories": ["lifestyle", "social", "religion"],
+  "icons": [
+    {
+      "src": "https://i.imgur.com/S8yAKDY.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://i.imgur.com/S8yAKDY.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

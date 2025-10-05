@@ -1,0 +1,93 @@
+.main-background-text h1 {
+    font-size: 90px;
+    color: white;
+    margin: 0;
+    line-height: 1.2;
+    white-space: pre-line;
+}
+
+.main-background-text p {
+    font-size: 24px;
+    color: var(--simple-gray);
+    margin: 10px 0 0 0;
+}
+
+.main-background-text .buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.main-background-text .buttons button {
+    min-width: 200px;
+    padding: 12px 30px;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .main-background-text h1 {
+        font-size: 70px;
+    }
+    
+    .main-background-text p {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-background-text h1 {
+        font-size: 50px;
+    }
+    
+    .main-background-text p {
+        font-size: 18px;
+        margin: 15px 0 0 0;
+    }
+    
+    .main-background-text .buttons {
+        margin-top: 25px;
+        gap: 8px;
+    }
+    
+    .main-background-text .buttons button {
+        width: 200px;
+        min-width: 160px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-background-text .buttons {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+    
+    .main-background-text .buttons button {
+        width: 100%;
+        max-width: 300px;
+        min-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-background-text h1 {
+        font-size: 36px;
+    }
+    
+    .main-background-text p {
+        font-size: 16px;
+    }
+    
+    .main-background-text .buttons {
+        margin-top: 20px;
+        gap: 12px;
+    }
+    
+    .main-background-text .buttons button {
+        width: 100%;
+        max-width: 280px;
+        min-width: auto;
+    }
+}

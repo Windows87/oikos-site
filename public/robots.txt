@@ -1,0 +1,32 @@
+# Robots.txt para Comunidade Cristã Oikos
+# https://oikos-saocarlos.com.br/robots.txt
+
+User-agent: *
+Allow: /
+
+# Principais páginas
+Allow: /sobre-nos
+Allow: /nosso-culto
+Allow: /pequenos-grupos
+Allow: /para-ceticos
+
+# Disallow páginas administrativas (caso existam no futuro)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
+
+# Sitemap
+Sitemap: https://oikos-saocarlos.com.br/sitemap.xml
+
+# Crawl-delay para ser respeitoso
+Crawl-delay: 1
+
+# Configurações específicas para bots conhecidos
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1

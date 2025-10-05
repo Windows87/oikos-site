@@ -1,0 +1,26 @@
+.white-section {
+    padding: 120px 64px;
+    display: flex;
+    justify-content: center;
+}
+
+.white-section-content {
+    max-width: 960px;
+    width: 100%;
+}
+
+.white-section .buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.white-section .buttons button {
+    width: 220px;
+}
+
+@media (max-width: 1024px) {
+    .white-section {
+        padding: 40px 40px;
+    }
+}

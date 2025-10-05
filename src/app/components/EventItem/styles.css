@@ -1,0 +1,154 @@
+.event-item {
+    cursor: pointer;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    border-radius: 16px;
+    gap: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.event-item .event-image {
+    width: 200px;
+    min-height: 120px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 16px;
+}
+
+.event-item .event-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    min-width: 80px;
+    padding: 10px;
+}
+
+.event-item .event-date .event-day {
+    font-size: 26px;
+    line-height: 1;
+}
+
+.event-item .event-date .event-month {
+    font-size: 18px;
+    line-height: 1;
+}
+
+.event-item .event-info {
+    flex: 1;
+    padding: 22px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event-item .event-info h4 {
+    margin: 0 0 8px 0;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.event-item .event-info div {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--dark-gray);
+    line-height: 1.4;
+}
+
+.event-item .event-button {
+    display: flex;
+    padding-right: 18px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .event-item {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .event-item .event-image {
+        width: calc(100% + 30px);
+        height: 200px;
+        margin: -20px -20px 0 -20px;
+        border-radius: 16px 16px 0 0;
+    }
+    
+    .event-item .event-date {
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        min-width: auto;
+        padding: 0;
+    }
+    
+    .event-item .event-date .event-day {
+        font-size: 24px;
+    }
+    
+    .event-item .event-date .event-month {
+        font-size: 16px;
+        align-self: end;
+        margin-bottom: 2px;
+    }
+    
+    .event-item .event-info {
+        padding: 0;
+    }
+    
+    .event-item .event-info h4 {
+        font-size: 22px;
+        margin: 0 0 8px 0;
+    }
+    
+    .event-item .event-info div {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    
+    .event-item .event-button {
+        padding-right: 0;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .event-item {
+        margin: 0 5px;
+        padding: 15px;
+    }
+    
+    .event-item .event-image {
+        height: 160px;
+        margin: -15px -15px 0 -15px;
+    }
+    
+    .event-item .event-info h4 {
+        font-size: 20px;
+    }
+    
+    .event-item .event-info div {
+        font-size: 13px;
+    }
+    
+    .event-item .event-date .event-day {
+        font-size: 22px;
+    }
+    
+    .event-item .event-date .event-month {
+        font-size: 14px;
+    }
+}

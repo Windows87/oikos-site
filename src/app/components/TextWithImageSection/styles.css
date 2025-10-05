@@ -1,0 +1,154 @@
+.text-with-image-section {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-with-image-section span {
+    font-weight: 500;
+    margin: 0 0 16px 0;
+    font-size: 18px;
+}
+
+.text-with-image-section .content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.text-with-image-section .image {
+    flex: 1;
+}
+
+.text-with-image-section .image img {
+    border-radius: 24px;
+    width: 100%;
+    height: auto;
+}
+
+.text-with-image-section .text {
+    flex: 1;
+}
+
+.text-with-image-section .text h3 {
+    font-weight: bold;
+    font-size: 38px;
+    margin: 0 0 8px 0;
+    line-height: 1.2;
+}
+
+.text-with-image-section .text p {
+    font-size: 24px;
+    margin: 0 0 30px 0;
+    line-height: 1.5;
+    color: var(--dark-gray);
+}
+
+.text-with-image-section .buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .text-with-image-section {
+        padding: 60px 20px;
+    }
+    
+    .text-with-image-section .content {
+        gap: 30px;
+    }
+    
+    .text-with-image-section .text h3 {
+        font-size: 32px;
+    }
+    
+    .text-with-image-section .text p {
+        font-size: 22px;
+    }
+    
+    .text-with-image-section span {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-with-image-section {
+        padding: 50px 20px;
+    }
+    
+    .text-with-image-section .content {
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+    }
+    
+    .text-with-image-section .text h3 {
+        font-size: 28px;
+    }
+    
+    .text-with-image-section .text p {
+        font-size: 18px;
+        margin: 0 0 25px 0;
+    }
+    
+    .text-with-image-section span {
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .text-with-image-section .buttons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-with-image-section .buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .text-with-image-section .buttons button {
+        width: 100%;
+        max-width: 250px;
+        min-width: 200px;
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-with-image-section {
+        padding: 30px 10px;
+    }
+    
+    .text-with-image-section .content {
+        gap: 15px;
+    }
+    
+    .text-with-image-section .text h3 {
+        font-size: 24px;
+    }
+    
+    .text-with-image-section .text p {
+        font-size: 16px;
+        margin: 0 0 15px 0;
+    }
+    
+    .text-with-image-section span {
+        font-size: 14px;
+    }
+    
+    .text-with-image-section .buttons {
+        gap: 12px;
+    }
+    
+    .text-with-image-section .buttons button {
+        max-width: 280px;
+        min-width: auto;
+    }
+}
